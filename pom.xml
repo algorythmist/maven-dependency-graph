@@ -18,7 +18,7 @@
         <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
         <kotlin.version>1.4.10</kotlin.version>
         <jgrapht.version>1.5.0</jgrapht.version>
-        <slf4j-simple.version>1.7.30</slf4j-simple.version>
+        <slf4j.version>1.7.30</slf4j.version>
         <graphviz-java.version>0.17.0</graphviz-java.version>
         <maven-model.version>3.6.3</maven-model.version>
     </properties>
@@ -57,8 +57,8 @@
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>${slf4j-simple.version}</version>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
         </dependency>
     </dependencies>
 

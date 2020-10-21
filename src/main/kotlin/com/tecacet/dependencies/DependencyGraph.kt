@@ -1,6 +1,5 @@
 package com.tecacet.dependencies
 
-import guru.nidi.graphviz.attribute.Color
 import guru.nidi.graphviz.attribute.Shape
 import guru.nidi.graphviz.engine.Format
 import guru.nidi.graphviz.engine.Graphviz
@@ -37,7 +36,7 @@ fun buildPomGraph(models : Collection<Model>, predicate: (Dependency) -> Boolean
     val graph = DefaultDirectedGraph<String, DefaultEdge>(DefaultEdge::class.java)
 
     for (model in models) {
-        var artifactId = model.artifactId
+        val artifactId = model.artifactId
         graph.addVertex(artifactId)
         val dependencies = model.dependencies.filter(predicate)
         dependencies.forEach {
