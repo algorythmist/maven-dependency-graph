@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions.*
 
 import org.junit.jupiter.api.Test
 
-internal class DependencyGraphKtTest {
+internal class DependencyGraphTest {
 
     @Test
     fun loadPoms() {
